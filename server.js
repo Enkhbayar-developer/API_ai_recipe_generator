@@ -26,12 +26,12 @@ app.get("/", (req, res) => {
 });
 
 //API routes
-app.use("/api/auth", authRoutes);
-app.use("/api/users", userRoutes);
-app.use("/api/pantry", pantryRoutes);
-app.use("/api/recipes", recipeRoutes);
-app.use("/api/meal-plans", mealPlansRoutes);
-app.use("/api/shopping-list", shoppingListRoutes);
+app.use("/auth", authRoutes);
+app.use("/users", userRoutes);
+app.use("/pantry", pantryRoutes);
+app.use("/recipes", recipeRoutes);
+app.use("/meal-plans", mealPlansRoutes);
+app.use("/shopping-list", shoppingListRoutes);
 
 const PORT = process.env.PORT || 8000;
 
