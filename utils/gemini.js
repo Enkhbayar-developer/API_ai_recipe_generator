@@ -64,7 +64,7 @@ Please provide a complete recipe in the following JSON format (return ONLY valid
   "cookingTips": ["Tip 1", "Tip 2"]
 }
 
-Make sure the recipe is creative, delicious, and uses the provided ingredients effectively.`;
+Make sure the recipe is creative, delicious, and uses the provided ingredients effectively. Эдгээрийг монгол хэл дээр орчуулж гаргаж өгнө үү.`;
 
   try {
     const response = await ai.models.generateContent({
@@ -105,7 +105,7 @@ export const generatePantrySuggestions = async (
 Suggest 3 creative recipe ideas that use these ingredients. Return ONLY a JSON array of strings (no markdown):
 ["Recipe idea 1", "Recipe idea 2", "Recipe idea 3"]
 
-Each suggestion should be a brief, appetizing description (1-2 sentences).`;
+Each suggestion should be a brief, appetizing description (1-2 sentences). Эдгээрийг монгол хэл дээр орчуулж гаргаж өгнө үү.`;
 
   try {
     const response = await ai.models.generateContent({
@@ -137,7 +137,7 @@ export const generateCookingTips = async (recipe) => {
 Ingredients: ${recipe.ingredients?.map((i) => i.name).join(", ") || "N/A"}
 
 Provide 3-5 helpful cooking tips to make this recipe better. Return ONLY a JSON array of strings (no markdown):
-["Tip 1", "Tip 2", "Tip 3"]`;
+["Tip 1", "Tip 2", "Tip 3"] Эдгээрийг монгол хэл дээр орчуулж гаргаж өгнө үү.`;
 
   try {
     const response = await ai.models.generateContent({
