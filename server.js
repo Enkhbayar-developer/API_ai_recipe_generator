@@ -20,6 +20,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173", // React development server
+      "https://ai-recipe-generator-mauve.vercel.app", // Deployed frontend
     ],
   }),
 );
